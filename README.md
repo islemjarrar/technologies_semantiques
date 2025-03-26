@@ -2,7 +2,7 @@
 Projet en technologies sémantiques - Santé
 
 ## Membres de l'équipe
-- Jarrar Islem
+- Islem Jarrar
 - Sonia Ghnimi
   
 ## Domaine choisi
