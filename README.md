@@ -23,7 +23,7 @@ Modéliser les relations patients-médecins-maladies-traitements pour :
 | **Hôpital**    | services, adresse                  | emploie                      |
 
 ## 📂 Structure du Projet
--/ontologie: Contiendra les fichiers RDF/OWL
--/documentation: Documentation détaillée du projet
--/sparql :les requêtes sparql et leurs résultats
+- /ontologie: Contiendra les fichiers RDF/OWL
+- /documentation: Documentation détaillée du projet
+- /sparql :les requêtes sparql et leurs résultats
 
