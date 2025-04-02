@@ -1,22 +1,29 @@
-# technologies_semantiques
-Projet en technologies sémantiques - Santé
+# Ontologie Médicale - Technologies Sémantiques
 
-## Membres de l'équipe
---[Islem Jarrar]. 
---[Sonia Ghnimi]
-  
-## Domaine choisi
-Le domaine de la santé est essentiel pour structurer et gérer les informations médicales de manière efficace. Ce projet vise à modéliser les relations entre patients, médecins, maladies et traitements à l'aide des technologies sémantiques. L'utilisation d'une ontologie permet d'améliorer l'interopérabilité des données et de faciliter les inférences, par exemple en suggérant des traitements adaptés aux diagnostics médicaux.
+## 👥 Membres de l'équipe
+- Islem Jarrar
+- Sonia Ghnimi
 
-## Concepts clés
-- Patient (identifiant, nom, âge, sexe, données médicales)
-- Médecin (identifiant, nom, spécialité, hôpital d'exercice)
-- Consultation (date, durée, patient concerné, médecin responsable)
-- Maladie (nom, type, symptômes)
-- Traitement (nom, médicament, thérapie, durée)
-- Hôpital (nom, adresse, services disponibles)
+## 🏥 Domaine : Système d'Information Médical
 
-## Structure du projet
-- `/ontologie` : Contiendra les fichiers RDF/OWL
-- `/documentation` : Documentation détaillée du projet
+### 📌 Objectifs
+Modéliser les relations patients-médecins-maladies-traitements pour :
+- Améliorer l'interopérabilité des données médicales
+- Faciliter les inférences automatiques
+- Optimiser la recommandation de traitements
+
+## 🧠 Concepts Clés
+| Concept        | Propriétés                          | Relations                     |
+|----------------|-------------------------------------|-------------------------------|
+| **Patient**    | identifiant, nom, âge, sexe        | souffreDe, hospitaliséDans   |
+| **Médecin**    | spécialité, hôpital                | prescrit, travailleDans       |
+| **Consultation**| date, durée                        | effectuéPar, aDiagnostiqué   |
+| **Maladie**    | type, symptômes                    | traitéPar                    |
+| **Traitement** | durée, médicament                  | prescritPar                  |
+| **Hôpital**    | services, adresse                  | emploie                      |
+
+## 📂 Structure du Projet
+/ontologie: Contiendra les fichiers RDF/OWL
+/documentation: Documentation détaillée du projet
+/sparql :les requêtes sparql et leurs résultats
 
