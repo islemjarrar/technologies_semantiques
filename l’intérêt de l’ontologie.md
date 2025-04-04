@@ -11,13 +11,7 @@ graph LR
     B -->|contreIndiquéPour| C[Traitement]
     A -->|recoit| C
     D[Reasoner] --> E[AlerteAutomatique]
-/* Exemple de requête SQL équivalente 
-SELECT p.nom
-FROM patients p
-JOIN prescriptions pr ON p.id = pr.patient_id
-JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id
-JOIN diagnostics d ON p.id = d.patient_id
-WHERE d.maladie_id = ci.maladie_id;*/
+
 ## Tableau comparatif
 
 | Fonctionnalité               | Ontologie OWL                    | Base Relationnelle            |
