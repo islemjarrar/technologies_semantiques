@@ -26,4 +26,5 @@ Modéliser les relations patients-médecins-maladies-traitements pour :
 - /ontologie: Contiendra les fichiers RDF/OWL
 - /documentation: Documentation détaillée du projet
 - /sparql :les requêtes sparql et leurs résultats
+- /swrl :les requetes swrl et leurs resultats
 
