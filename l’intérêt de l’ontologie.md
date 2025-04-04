@@ -11,6 +11,7 @@ graph LR
     B -->|contreIndiquéPour| C[Traitement]
     A -->|recoit| C
     D[Reasoner] --> E[AlerteAutomatique]
+
 ## Tableau comparatif
 
 | Fonctionnalité               | Ontologie OWL                    | Base Relationnelle            |
