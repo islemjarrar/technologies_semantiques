@@ -14,9 +14,9 @@ FROM patients p
 JOIN prescriptions pr ON p.id = pr.patient_id  
 JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id  
 JOIN diagnostics d ON p.id = d.patient_id  
-WHERE d.maladie_id = ci.maladie_id;
+WHERE d.maladie_id = ci.maladie_id;```
 
-##📊 Tableau comparatif
+## **📊 Tableau comparatif**
 
 
 | Fonctionnalité               | Ontologie OWL                    | Base Relationnelle            |
@@ -26,7 +26,7 @@ WHERE d.maladie_id = ci.maladie_id;
 | Flexibilité sémantique        | ✅ (OWL DL)                       | ❌ (Schéma rigide)            |
 | Gestion des contradictions    | ✅ (Vérification de cohérence)    | ❌ (Problèmes de redondance)  |
 
-##🔎 Analyse détaillée
+##**🔎 Analyse détaillée**
 
 
 | Critère                        | Ontologie OWL                       | Base SQL Relationnelle         |
