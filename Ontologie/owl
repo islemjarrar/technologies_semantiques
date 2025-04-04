@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/administrator/ontologies/2025/3/untitled-ontology-8">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementChronique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ursodiol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Ventoline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationRoutine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#asthma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#varicelle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationUrgente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Mayssa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#medecin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#cholestase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Islem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementPonctuel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#grippe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#insuffissance_cardiaque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Mohamed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Montasar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#cardiologue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#hopital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Oumaima"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Sirine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieChronique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Hedi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Generaliste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieAigue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Grippex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Sonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Specialiste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Paracetamol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Pneumologue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Ivabradine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Patient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Hopital_Hedi_Chaker"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationRoutine"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationUrgente"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Generaliste"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#medecin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieAigue"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieChronique"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Pneumologue"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Specialiste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Specialiste"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#medecin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementChronique"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementPonctuel"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#cardiologue"/>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Specialiste"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementPonctuel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Grippex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Grippex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Patient"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Hedi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#hopital"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Hopital_Hedi_Chaker"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Specialiste"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Islem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#cardiologue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Islem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#medecin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Islem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementChronique"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Ivabradine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Ivabradine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Pneumologue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Mayssa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Specialiste"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Mayssa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#medecin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Mayssa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Patient"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Mohamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Patient"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Montasar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Patient"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Oumaima"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementPonctuel"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Paracetamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Paracetamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Patient"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Sirine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Generaliste"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Sonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#medecin"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Sonia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementChronique"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Ventoline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#Ventoline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieAigue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#asthma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#asthma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieAigue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#cholestase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#cholestase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationUrgente"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationRoutine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationRoutine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ConsultationRoutine"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#consultation5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieAigue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#grippe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#grippe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieChronique"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#insuffissance_cardiaque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#insuffissance_cardiaque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#TraitementChronique"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ursodiol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#traitement"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#ursodiol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#MaladieAigue"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#varicelle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#maladie"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#varicelle"/>
+    </ClassAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
