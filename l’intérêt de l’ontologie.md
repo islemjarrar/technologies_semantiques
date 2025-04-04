@@ -1,20 +1,33 @@
-# Comparaison Ontologie OWL vs Base de Données Relationnelle
+🧠 Comparaison entre une Ontologie OWL et une Base de Données Relationnelle
+📘 Scénario utilisant OWL (Web Ontology Language)
+🎯 Fonctionnalité :
+Le système détecte automatiquement qu’un traitement est inadapté à une maladie.
 
-## Scénario OWL
-### Fonctionnalité :
-Le système détecte automatiquement qu'un traitement est inadapté à une maladie.  
-✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
+✅ Avantage clé : Pas besoin d’écrire une requête manuelle grâce au raisonneur (reasoner).
 
+🧩 Modélisation (Mermaid)
+mermaid
+Copier
+Modifier
 graph LR
-    P[Patient] -->|consulte pour| M[Maladie]
-    M -->|requiert| T[Traitement]
-    P -->|est traité par| T
-    Med[Médecin] -->|prescrit| T
-    T -->|est de type| TT["TraitementPonctuel/TraitementChronique"]
-    M -->|est classée comme| MT["MaladieAigue/MaladieChronique"]
-    TT -->|incompatible avec| MT
-    Système[SystemeExpert] -->|génère| A[AlerteTherapeutique]
-    
+    A[Patient] -->|souffreDe| B[Maladie]
+    B -->|contreIndiquéPour| C[Traitement]
+    A -->|recoit| C
+    D[Reasoner] --> E[AlerteAutomatique]
+🗃️ Scénario utilisant une Base de Données Relationnelle (SQL)
+⚙️ Mise en œuvre :
+Nécessite la création de déclencheurs (triggers) complexes et une requête manuelle pour obtenir les mêmes résultats.
+
+🔍 Exemple de requête SQL :
+sql
+Copier
+Modifier
+SELECT p.nom
+FROM patients p
+JOIN prescriptions pr ON p.id = pr.patient_id
+JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id
+JOIN diagnostics d ON p.id = d.patient_id
+WHERE d.maladie_id = ci.maladie_id;
  
 
 ## Tableau comparatif
