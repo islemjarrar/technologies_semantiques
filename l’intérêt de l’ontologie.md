@@ -3,7 +3,7 @@
 🎯 Fonctionnalité :
 Le système détecte automatiquement qu’un traitement est inadapté à une maladie.
 
-✅ Avantage clé : Pas besoin d’écrire une requête manuelle grâce au raisonneur (reasoner)
+✅ Avantage clé : Pas besoin d’écrire une requête manuelle grâce au raisonneur (reasoner).
 
 🧩 Modélisation (Mermaid)
 mermaid
@@ -28,9 +28,8 @@ JOIN prescriptions pr ON p.id = pr.patient_id
 JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id
 JOIN diagnostics d ON p.id = d.patient_id
 WHERE d.maladie_id = ci.maladie_id;
- 
+📊 Tableau comparatif
 
-## Tableau comparatif
 
 | Fonctionnalité               | Ontologie OWL                    | Base Relationnelle            |
 |------------------------------|-----------------------------------|-------------------------------|
@@ -39,7 +38,8 @@ WHERE d.maladie_id = ci.maladie_id;
 | Flexibilité sémantique        | ✅ (OWL DL)                       | ❌ (Schéma rigide)            |
 | Gestion des contradictions    | ✅ (Vérification de cohérence)    | ❌ (Problèmes de redondance)  |
 
-## Analyse détaillée
+🔎 Analyse détaillée
+
 
 | Critère                        | Ontologie OWL                       | Base SQL Relationnelle         |
 |---------------------------------|--------------------------------------|--------------------------------|
@@ -48,9 +48,19 @@ WHERE d.maladie_id = ci.maladie_id;
 | Performance                    | Peut ralentir sur >100k instances    | Optimisé pour gros volumes    |
 | Flexibilité                    | Modélisation sémantique riche       | Schéma rigide                 |
 | Maintenance                    | Règles centralisées                 | Code dispersé                 |
+✅ Conclusion
+L’utilisation d’une ontologie OWL permet :
 
-## Conclusion
+Une détection automatique des incohérences
 
-L'utilisation d'une ontologie OWL permet une détection automatique des incohérences et facilite l'évolution du système grâce aux règles sémantiques et à l'inférence automatique.  
-En revanche, une base relationnelle est plus optimisée pour le traitement de gros volumes de données mais nécessite une gestion manuelle des règles et une structure de données rigide.
+Une évolution souple du système grâce à l’inférence sémantique
 
+Une modélisation riche et dynamique
+
+En revanche, une base relationnelle :
+
+Est plus performante pour des traitements à très grande échelle
+
+Nécessite une gestion manuelle des règles
+
+Implique une structure de données rigide
