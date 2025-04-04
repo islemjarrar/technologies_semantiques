@@ -5,12 +5,21 @@
 Le système détecte automatiquement qu'un traitement est inadapté à une maladie.  
 ✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
 
-```mermaid
 graph LR
-    A[Patient] -->|souffreDe| B[Maladie]
-    B -->|contreIndiquéPour| C[Traitement]
-    A -->|recoit| C
-    D[Reasoner] --> E[AlerteAutomatique]
+    P[Patient] -->|consulte pour| M[Maladie]
+    M -->|requiert| T[Traitement]
+    P -->|est traité par| T
+    Med[Médecin] -->|prescrit| T
+    T -->|est de type| TT["TraitementPonctuel/TraitementChronique"]
+    M -->|est classée comme| MT["MaladieAigue/MaladieChronique"]
+    TT -->|incompatible avec| MT
+    Système[SystemeExpert] -->|génère| A[AlerteTherapeutique]
+    
+    style P fill:#f9f,stroke:#333
+    style Med fill:#9f9,stroke:#333
+    style M fill:#f96,stroke:#333
+    style T fill:#69f,stroke:#333
+    style A fill:#ff0,stroke:#f66
 
 ## Tableau comparatif
 
