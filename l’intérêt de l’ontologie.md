@@ -1,12 +1,11 @@
-Comparaison Ontologie OWL vs Base de Données Relationnelle
-Scénario OWL
-Fonctionnalité :
-Le système détecte automatiquement qu'un traitement est inadapté à une maladie.
-✅ Avantage clé : Pas besoin d'écrire une requête manuelle.
+# Comparaison Ontologie OWL vs Base de Données Relationnelle
 
-mermaid
-Copier
-Modifier
+## Scénario OWL
+### Fonctionnalité :
+Le système détecte automatiquement qu'un traitement est inadapté à une maladie.  
+✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
+
+```mermaid
 graph LR
     A[Patient] -->|souffreDe| B[Maladie]
     B -->|contreIndiquéPour| C[Traitement]
