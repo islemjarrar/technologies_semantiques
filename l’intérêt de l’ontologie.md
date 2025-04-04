@@ -15,11 +15,7 @@ graph LR
     TT -->|incompatible avec| MT
     Système[SystemeExpert] -->|génère| A[AlerteTherapeutique]
     
-    style P fill:#f9f,stroke:#333
-    style Med fill:#9f9,stroke:#333
-    style M fill:#f96,stroke:#333
-    style T fill:#69f,stroke:#333
-    style A fill:#ff0,stroke:#f66
+ 
 
 ## Tableau comparatif
 
