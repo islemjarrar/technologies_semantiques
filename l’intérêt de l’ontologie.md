@@ -5,17 +5,9 @@
 Le système détecte automatiquement qu'un traitement est inadapté à une maladie.  
 ✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
 
-```mermaid
-graph LR
-    A[Patient] -->|souffreDe| B[Maladie]
-    B -->|contreIndiquéPour| C[Traitement]
-    A -->|recoit| C
-    D[Reasoner] --> E[AlerteAutomatique]
 
 🔍 Exemple de requête SQL :
-sql
-Copier
-Modifier
+
 SELECT p.nom
 FROM patients p
 JOIN prescriptions pr ON p.id = pr.patient_id
