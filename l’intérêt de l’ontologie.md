@@ -6,9 +6,15 @@ Le système détecte automatiquement qu'un traitement est inadapté à une malad
 ✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
 
 
-##🔍 Exemple de requête SQL :
+## **🔍 Exemple de requête SQL :**
 
-SELECT p.nom  FROM patients p    JOIN prescriptions pr ON p.id = pr.patient_id  JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id  JOIN diagnostics d ON p.id = d.patient_id  WHERE d.maladie_id = ci.maladie_id;
+```sql
+SELECT p.nom  
+FROM patients p  
+JOIN prescriptions pr ON p.id = pr.patient_id  
+JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id  
+JOIN diagnostics d ON p.id = d.patient_id  
+WHERE d.maladie_id = ci.maladie_id;
 
 ##📊 Tableau comparatif
 
