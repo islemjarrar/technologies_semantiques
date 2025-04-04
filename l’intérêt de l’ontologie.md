@@ -7,11 +7,10 @@ Le système détecte automatiquement qu'un traitement est inadapté à une malad
 
 ```mermaid
 graph LR
-    A[Patient] -->|soufreDe| B[Maladie]
+    A[Patient] -->|souffreDe| B[Maladie]
     B -->|contreIndiquéPour| C[Traitement]
     A -->|recoit| C
     D[Reasoner] --> E[AlerteAutomatique]
-
 ## Tableau comparatif
 
 | Fonctionnalité               | Ontologie OWL                    | Base Relationnelle            |
