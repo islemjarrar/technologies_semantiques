@@ -5,7 +5,7 @@
 ### **Fonctionnalité :**
 Le système détecte automatiquement qu'un traitement est inadapté à une maladie.  
 ✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
----
+
 
 ## **🔍 Exemple de requête SQL :**
 ---
