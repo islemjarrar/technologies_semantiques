@@ -6,15 +6,11 @@ Le système détecte automatiquement qu'un traitement est inadapté à une malad
 ✅ **Avantage clé :** Pas besoin d'écrire une requête manuelle.
 
 
-🔍 Exemple de requête SQL :
+##🔍 Exemple de requête SQL :
 
-SELECT p.nom
-FROM patients p
-JOIN prescriptions pr ON p.id = pr.patient_id
-JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id
-JOIN diagnostics d ON p.id = d.patient_id
-WHERE d.maladie_id = ci.maladie_id;
-📊 Tableau comparatif
+SELECT p.nom  FROM patients p    JOIN prescriptions pr ON p.id = pr.patient_id  JOIN contre_indications ci ON pr.traitement_id = ci.traitement_id  JOIN diagnostics d ON p.id = d.patient_id  WHERE d.maladie_id = ci.maladie_id;
+
+##📊 Tableau comparatif
 
 
 | Fonctionnalité               | Ontologie OWL                    | Base Relationnelle            |
@@ -24,7 +20,7 @@ WHERE d.maladie_id = ci.maladie_id;
 | Flexibilité sémantique        | ✅ (OWL DL)                       | ❌ (Schéma rigide)            |
 | Gestion des contradictions    | ✅ (Vérification de cohérence)    | ❌ (Problèmes de redondance)  |
 
-🔎 Analyse détaillée
+##🔎 Analyse détaillée
 
 
 | Critère                        | Ontologie OWL                       | Base SQL Relationnelle         |
@@ -36,8 +32,8 @@ WHERE d.maladie_id = ci.maladie_id;
 | Maintenance                    | Règles centralisées                 | Code dispersé                 |
 
 
-✅ Conclusion
-## Conclusion
+
+## ✅Conclusion
 
 L'utilisation d'une ontologie OWL permet une détection automatique des incohérences et facilite l'évolution du système grâce aux règles sémantiques et à l'inférence automatique.  
 En revanche, une base relationnelle est plus optimisée pour le traitement de gros volumes de données, mais nécessite une gestion manuelle des règles et une structure de données rigide.
