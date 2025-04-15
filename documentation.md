@@ -150,25 +150,49 @@ Nous avons enrichi notre ontologie avec des éléments OWL :
 ### 🔨 Phase 5 : Règles SWRL
 Nous avons ajouté 4 règles SWRL pour enrichir les inférences :
 
-#### Règle 1 : Si un patient a une consultation, alors il est un patient actif
+### REQUÊTE 1 - Identification des maladies chroniques
 ```swrl
-Patient(?p) ^ aConsulté(?p, ?c) → PatientActif(?p)
+untitled-ontology-3:TraitementChronique(?m) ^
+untitled-ontology-3:traite(?m, ?t) ^
+untitled-ontology-3:traitement(?t)
+-> untitled-ontology-3:MaladieChronique(?t)
 ```
+*But* : Identifier les maladies associées à un traitement chronique.  
+*Usage* : Suivi des pathologies de longue durée.  
+*Exemple* : `:Paracetamol → :MaladieChronique`
 
-#### Règle 2 : Si un médecin prescrit un traitement à une maladie, il est spécialisé
+### REQUÊTE 2 - Consultation urgente selon maladie aiguë
 ```swrl
-Médecin(?m) ^ prescrit(?m, ?t) ^ traite(?t, ?maladie) → Spécialisé(?m)
+untitled-ontology-3:consultation(?c) ^
+untitled-ontology-3:aconsulté(?c, ?p) ^
+untitled-ontology-3:souffreDe(?p, ?m) ^
+untitled-ontology-3:MaladieAigue(?m)
+-> untitled-ontology-3:ConsultationUrgente(?c)
 ```
+*But* : Repérer les consultations urgentes.  
+*Usage* : Triage prioritaire dans les services d'urgence.  
+*Exemple* : `:consult1 → :ConsultationUrgente`
 
-#### Règle 3 : Si une consultation a diagnostiqué une maladie, alors le patient concerné a cette maladie
+### REQUÊTE 3 - Patient traité par médecin
 ```swrl
-Consultation(?c) ^ aDiagnostiqué(?c, ?m) ^ aConsulté(?p, ?c) → aMaladie(?p, ?m)
+untitled-ontology-3:aconsulté(?p, ?m) ^
+untitled-ontology-3:aDiagnostiqué(?m, ?d)
+-> untitled-ontology-3:traite(?m, ?p)
 ```
+*But* : Lier un médecin à un patient qu'il traite.  
+*Usage* : Suivi des responsabilités médicales.  
+*Exemple* : `:Dr_Mayssa traite :Montasar`
 
-#### Règle 4 : Si un traitement dure plus de 30 jours, alors il est long terme
+### REQUÊTE 5 - Patient hospitalisé
 ```swrl
-Traitement(?t) ^ duree(?t, ?d) ^ swrlb:greaterThan(?d, 30) → LongTerme(?t)
+untitled-ontology-3:souffreDe(?p, ?m) ^
+untitled-ontology-3:MaladieChronique(?m) ^
+untitled-ontology-3:hospitaliséeDans(?m, ?h)
+-> untitled-ontology-3:hospitaliséeDans(?p, ?h)
 ```
+*But* : Déduire l'hospitalisation du patient à partir de celle de la maladie.  
+*Usage* : Attribution automatique d’hôpital.  
+*Exemple* : `:asma → hospitaliséeDans :Hôpital_Hedi_Chaker`, donc `:Oumaima → hospitaliséeDans :Hôpital_Hedi_Chaker`
 
 ---
 
@@ -182,10 +206,6 @@ Traitement(?t) ^ duree(?t, ?d) ^ swrlb:greaterThan(?d, 30) → LongTerme(?t)
 
 ### 📊 Conclusion
 Ce projet nous a permis de mettre en pratique les concepts fondamentaux des technologies sémantiques : modélisation RDF/OWL, interrogation SPARQL, inférence par règles SWRL. L'ontologie développée dans le domaine de la santé illustre l'avantage de la représentation sémantique pour structurer, exploiter et raisonner sur les données complexes dans un environnement réel.
-
-
-
-
 
 
 
