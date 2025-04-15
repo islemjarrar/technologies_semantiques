@@ -68,7 +68,11 @@ Nous avons conçu 4 requêtes SPARQL pertinentes pour interroger l'ontologie :
 
 # REQUÊTE 1 - Patients et leurs maladies
 PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-SELECT ?patient ?maladie WHERE { ?patient a :Patient ; :souffreDe ?maladie . }
+
+SELECT ?patient ?maladie WHERE {
+  ?patient a :Patient ;
+           :souffreDe ?maladie .
+}
 
 # REQUÊTE 2 - Médecins par spécialité
 PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
