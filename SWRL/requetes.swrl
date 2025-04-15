@@ -1,1 +1,67 @@
+## REQUÊTE 1 - Identification des maladies chroniques
+```
+untitled-ontology-3:TraitementChronique(?m) ^
+untitled-ontology-3:traite(?m, ?t) ^
+untitled-ontology-3:traitement(?t)
+-> untitled-ontology-3:MaladieChronique(?t)
+```
+/**
+But : Identifier les maladies associées à un traitement chronique.
+Usage : Suivi des pathologies de longue durée.
+Exemple de sortie :
+  - :Paracetamol → :MaladieChronique
+*/
 
+## REQUÊTE 2 - Consultation urgente selon maladie aiguë
+```
+untitled-ontology-3:consultation(?c) ^
+untitled-ontology-3:aconsulté(?c, ?p) ^
+untitled-ontology-3:souffreDe(?p, ?m) ^
+untitled-ontology-3:MaladieAigue(?m)
+-> untitled-ontology-3:ConsultationUrgente(?c)
+```
+/**
+But : Repérer les consultations urgentes.
+Usage : Triage prioritaire dans les services d'urgence.
+Exemple :
+  - :consult1 → :ConsultationUrgente
+*/
+
+## REQUÊTE 3 - Patient traité par médecin
+```
+untitled-ontology-3:aconsulté(?p, ?m) ^
+untitled-ontology-3:aDiagnostiqué(?m, ?d)
+-> untitled-ontology-3:traite(?m, ?p)
+```
+/**
+But : Lier un médecin à un patient qu'il traite.
+Usage : Suivi des responsabilités médicales.
+Exemple :
+  - :Dr_Mayssa traite :Montasar
+*/
+
+## REQUÊTE 4 - (Doublon de la REQUÊTE 3)
+```
+untitled-ontology-3:aconsulté(?p, ?m) ^
+untitled-ontology-3:aDiagnostiqué(?m, ?d)
+-> untitled-ontology-3:traite(?m, ?p)
+```
+/**
+Doublon exact de la règle précédente.
+Il est conseillé de supprimer cette redondance.
+*/
+
+## REQUÊTE 5 - Patient hospitalisé
+```
+untitled-ontology-3:souffreDe(?p, ?m) ^
+untitled-ontology-3:MaladieChronique(?m) ^
+untitled-ontology-3:hospitaliséeDans(?m, ?h)
+-> untitled-ontology-3:hospitaliséeDans(?p, ?h)
+```
+/**
+But : Déduire l'hospitalisation du patient à partir de celle de la maladie.
+Usage : Attribution automatique d’hôpital.
+Exemple :
+  - :asma → hospitaliséeDans :Hôpital_Hedi_Chaker
+  - donc :Oumaima → hospitaliséeDans :Hôpital_Hedi_Chaker
+*/
