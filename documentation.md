@@ -66,71 +66,67 @@ Nous avons créé des classes RDF pour chaque entité du domaine et utilisé les
 ### 🔍 Phase 3 : Interrogation avec SPARQL
 Nous avons conçu 4 requêtes SPARQL pertinentes pour interroger l'ontologie :
 
-# REQUÊTE 1 - Patients et leurs maladies
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-
+### REQUÊTE 1 - Patients et leurs maladies
+```sparql
 SELECT ?patient ?maladie WHERE {
   ?patient a :Patient ;
-           :souffreDe ?maladie .
+          :souffreDe ?maladie .
 }
+```
 
-# REQUÊTE 2 - Médecins par spécialité
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-SELECT ?medecin ?specialite WHERE { ?medecin a :medecin ; :aPourSpecialité ?specialite . }
+### REQUÊTE 2 - Médecins par spécialité
+```sparql
+SELECT ?medecin ?specialite WHERE {
+  ?medecin a :medecin ;
+          :aPourSpecialité ?specialite .
+}
+```
 
-# REQUÊTE 3 - Prescriptions complètes
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
+### REQUÊTE 3 - Prescriptions complètes
+```sparql
 SELECT ?medecin ?patient ?traitement ?duree WHERE {
   ?medecin :prescrit ?traitement .
   ?patient :recoit ?traitement .
   ?traitement :aPourDurée ?duree .
 }
+```
 
-# REQUÊTE 4 - Patients hospitalisés
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-
+### REQUÊTE 4 - Patients hospitalisés
+```sparql
 SELECT DISTINCT ?patient ?hopital ?medecin WHERE {
   ?patient :hospitaliséeDans ?hopital .
   ?hopital :emploie ?medecin .
   ?medecin a :medecin .
 }
+```
 
-
-# REQUÊTE 5 - Traitements spécifiques
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-
+### REQUÊTE 5 - Traitements spécifiques
+```sparql
 SELECT ?maladie ?traitement ?duree WHERE {
   ?traitement :traite ?maladie ;
               :aPourDurée ?duree .
 }
 ORDER BY DESC(?duree)
+```
 
-
-
-
-# REQUÊTE 6 - Agenda médical
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
+### REQUÊTE 6 - Agenda médical (mai 2025)
+```sparql
 SELECT ?consultation ?date ?medecin ?maladie WHERE {
   ?consultation a :consultation ;
                 :aPourDate ?date ;
                 :effectueéPar ?medecin ;
                 :aDiagnostiqué ?maladie .
-  FILTER(STRSTARTS(?date, "12/05"))  # Filtre mai 2025
+  FILTER(STRSTARTS(?date, "12/05"))
 }
+```
 
-
-
-# REQUÊTE 7 - Exploration complète d'un médecin
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-
+### REQUÊTE 7 - Exploration d’un médecin
+```sparql
 DESCRIBE :Islem
+```
 
-
-*/# REQUÊTE 8 - Sous-graphe Patients-Maladies-Traitements
-PREFIX : <http://www.semanticweb.org/administrator/ontologies/2025/2/untitled-ontology-3#>
-
+### REQUÊTE 8 - Sous-graphe Patients-Maladies-Traitements
+```sparql
 CONSTRUCT {
   ?patient :aMaladie ?maladie .
   ?maladie :aTraitement ?traitement .
@@ -139,6 +135,7 @@ WHERE {
   ?patient :souffreDe ?maladie .
   ?traitement :traite ?maladie .
 }
+```
 
 ---
 
@@ -185,6 +182,9 @@ Traitement(?t) ^ duree(?t, ?d) ^ swrlb:greaterThan(?d, 30) → LongTerme(?t)
 
 ### 📊 Conclusion
 Ce projet nous a permis de mettre en pratique les concepts fondamentaux des technologies sémantiques : modélisation RDF/OWL, interrogation SPARQL, inférence par règles SWRL. L'ontologie développée dans le domaine de la santé illustre l'avantage de la représentation sémantique pour structurer, exploiter et raisonner sur les données complexes dans un environnement réel.
+
+
+
 
 
 
