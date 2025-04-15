@@ -64,7 +64,7 @@ Nous avons créé des classes RDF pour chaque entité du domaine et utilisé les
 ---
 
 ### 🔍 Phase 3 : Interrogation avec SPARQL
-Nous avons conçu 4 requêtes SPARQL pertinentes pour interroger l'ontologie :
+Nous avons conçu 8 requêtes SPARQL pertinentes pour interroger l'ontologie :
 
 ### REQUÊTE 1 - Patients et leurs maladies
 ```sparql
@@ -148,7 +148,7 @@ Nous avons enrichi notre ontologie avec des éléments OWL :
 ---
 
 ### 🔨 Phase 5 : Règles SWRL
-Nous avons ajouté 4 règles SWRL pour enrichir les inférences :
+Nous avons ajouté 5 règles SWRL pour enrichir les inférences :
 
 ### REQUÊTE 1 - Identification des maladies chroniques
 ```swrl
@@ -159,7 +159,7 @@ untitled-ontology-3:traitement(?t)
 ```
 *But* : Identifier les maladies associées à un traitement chronique.  
 *Usage* : Suivi des pathologies de longue durée.  
-*Exemple* : `:Paracetamol → :MaladieChronique`
+
 
 ### REQUÊTE 2 - Consultation urgente selon maladie aiguë
 ```swrl
@@ -171,7 +171,7 @@ untitled-ontology-3:MaladieAigue(?m)
 ```
 *But* : Repérer les consultations urgentes.  
 *Usage* : Triage prioritaire dans les services d'urgence.  
-*Exemple* : `:consult1 → :ConsultationUrgente`
+
 
 ### REQUÊTE 3 - Patient traité par médecin
 ```swrl
@@ -181,7 +181,7 @@ untitled-ontology-3:aDiagnostiqué(?m, ?d)
 ```
 *But* : Lier un médecin à un patient qu'il traite.  
 *Usage* : Suivi des responsabilités médicales.  
-*Exemple* : `:Dr_Mayssa traite :Montasar`
+
 
 ### REQUÊTE 5 - Patient hospitalisé
 ```swrl
@@ -192,7 +192,7 @@ untitled-ontology-3:hospitaliséeDans(?m, ?h)
 ```
 *But* : Déduire l'hospitalisation du patient à partir de celle de la maladie.  
 *Usage* : Attribution automatique d’hôpital.  
-*Exemple* : `:asma → hospitaliséeDans :Hôpital_Hedi_Chaker`, donc `:Oumaima → hospitaliséeDans :Hôpital_Hedi_Chaker`
+
 
 ---
 
